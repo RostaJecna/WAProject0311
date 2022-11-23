@@ -4,9 +4,70 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <title>BlogY</title>
     </head>
-    <body>
-
+    <body class="bg-light">
+        <header class="p-2 bg-dark shadow-lg">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <div class="container">
+                    <img src="./img/logotype.svg" class="bi me-2" height="48" alt="logotype">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted">Find Me</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Studios
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                        <img src="./img/icons/photoshop.svg" svg class="bi" width="16" height="16">
+                                        Photoshop
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <img src="./img/icons/illustrator.svg" svg class="bi" width="16" height="16">
+                                        Illustrator
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <img src="./img/icons/blender.svg" svg class="bi" width="16" height="16">
+                                        Blender
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <img src="./img/icons/aseprite.svg" svg class="bi" width="16" height="16">
+                                        Aseprite
+                                    </a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <img src="./img/icons/studio.svg" svg class="bi" width="16" height="16">
+                                        Entire studio
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input type="search" class="form-control form-control-dark text-bg-dark me-2" placeholder="Search..."
+                                aria-label="Search">
+                            <button class="btn btn-warning" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
     </body>
 </html>
